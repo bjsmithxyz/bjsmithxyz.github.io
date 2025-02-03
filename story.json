@@ -1,0 +1,29 @@
+{
+    "start": {
+        "text": "You wake up in a dark forest, the sound of rustling leaves surrounding you. A path splits ahead.",
+        "image": "forest.jpg",
+        "audio": "forest.mp3",
+        "choices": [
+            { "text": "Take the left path", "nextScene": "left_path" },
+            { "text": "Take the right path", "nextScene": "right_path" }
+        ]
+    },
+    "left_path": {
+        "text": "You follow a narrow trail leading to an abandoned cabin. The door is slightly open.",
+        "image": "cabin.jpg",
+        "audio": "cabin.mp3",
+        "choices": [
+            { "text": "Enter the cabin", "nextScene": "cabin_inside" },
+            { "text": "Turn back", "nextScene": "start" }
+        ]
+    },
+    "right_path": {
+        "text": "The path opens to a misty lake. A boat drifts nearby, unmoored.",
+        "image": "lake.jpg",
+        "audio": "lake.mp3",
+        "choices": [
+            { "text": "Take the boat", "nextScene": "boat_ride" },
+            { "text": "Walk around the lake", "nextScene": "lake_shore" }
+        ]
+    }
+}
