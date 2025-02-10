@@ -112,9 +112,6 @@
             { "text": "Walk up the staircase", "nextScene": "dark_staircase" }
         ]
     },
-    
-    // Add more scenes here...
-
     "death": {
         "text": "You have died.",
         "image": "death.jpg",
