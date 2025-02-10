@@ -9,7 +9,7 @@
         ]
     },
     "cabin_outside": {
-        "text": "You find yourself in front of an old workers cabin. The door is slightly ajar, you can see a dull light coming from inside.",
+        "text": "You find yourself in front of an old cabin. The door is slightly ajar, you can see a dull light coming from inside.",
         "image": "cabin_outside.jpg",
         "audio": "cabin_outside.mp3",
         "choices": [
@@ -24,14 +24,14 @@
         "choices": [
             { 
                 "text": "Pick up the note",
-                "nextScene": "mysterious_note", 
+                "nextScene": "mysterious_note",
                 "item": {
                     "name": "Mysterious Note",
                     "description": "A cryptic message scrawled in an unknown language.",
                     "image": "mysterious_note.png"
                 }
             },
-            { 
+            {
                 "text": "Pick up the dagger", 
                 "nextScene": "pick_up_dagger",
                 "item": {
@@ -61,7 +61,7 @@
         ]
     },
     "examine_candle": {
-        "text": "It's a candle, burned down to a nub. The flame flickers in the drafty cabin.",
+        "text": "It's a candle, burned down to a nub. The flame flickers in the drafty cabin. Who lit it?",
         "image": "candle.jpg",
         "audio": "candle.mp3",
         "choices": [
@@ -85,7 +85,7 @@
         ]
     },
     "fight_wolf": {
-        "text": "You grip the rusty dagger and prepare for the worst. The creature lunges at you, instinctively you thrust the dagger into its neck. It falls to the ground, dead.",
+        "text": "You grip the rusty dagger and prepare for the worst. The creature lunges at you, instinctively you thrust the dagger into its neck. It falls ontop of you, dead.",
         "image": "wolf_fight.jpg",
         "audio": "fight.mp3",
         "choices": [
@@ -93,6 +93,28 @@
         ],
         "removeItem": "Rusty Dagger"
     },
+    "forest_clearing": {
+        "text": "You continue along the path for some time, out of the darkness and mist you see a beam of moonlight reflect off a wet stone wall. As you approach you see the rear battlement of a castle, a small door is ajar.",
+        "image": "forest_clearing.jpg",
+        "audio": "forest_clearing.mp3",
+        "choices": [
+            { "text": "Walk through the door", "nextScene": "inside_castle_back_door" },
+            { "text": "Turn back", "nextScene": "start" }
+        ]
+    },
+    "inside_castle_back_door": {
+        "text": "You enter the castle, the air is damp and cold. The sound of dripping water echoes through the halls. You see a colossal staircase, twenty meters across, leading up into darkness. To your left and right are two doors.",
+        "image": "castle_back_door.jpg",
+        "audio": "castle_back_door.mp3",
+        "choices": [
+            { "text": "Approach the left door", "nextScene": "left_room" },
+            { "text": "Approach the right door", "nextScene": "right_room" },
+            { "text": "Walk up the staircase", "nextScene": "dark_staircase" }
+        ]
+    },
+    
+    // Add more scenes here...
+
     "death": {
         "text": "You have died.",
         "image": "death.jpg",
